@@ -82,8 +82,8 @@
   </style>
   <script>
     // if hostname is not metacrisis.xyz, redirect 
-    if (window.location.hostname != 'metacrisis.xyz') {
-      window.location.href = 'https://metacrisis.xyz';
+    if (window.location.hostname && window.location.hostname != 'metacrisis.xyz') {
+      window.location.replace('https://metacrisis.xyz');
     }
   </script>
 </head>
@@ -98,16 +98,16 @@ background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);">
     <div class="row links">
       <div class="col-12 col-lg-4">
         <a href="https://forum.metacrisis.xyz" class="d-block mb-3" style="background-image: url(forum.png);"></a>
-        <h2 class="text-center"><a href="https://forum.metacrisis.xyz">Forum</a></h2>
+        <h2 class="mb-4 text-center"><a href="https://forum.metacrisis.xyz">Forum</a></h2>
       </div>
       <div class="col-12 col-lg-4">
         <a href="https://wiki.metacrisis.xyz" class="d-block mb-3" style="background-image: url(wiki.png);"></a>
-        <h2 class="text-center"><a href="https://wiki.metacrisis.xyz">Wiki</a></h2>
+        <h2 class="mb-4 text-center"><a href="https://wiki.metacrisis.xyz">Wiki</a></h2>
       </div>
       <div class="col-12 col-lg-4">
         <a href="https://docs.google.com/document/d/1DbVH7Le2AF4fObJ_1o62rND20_OBzegSFmCIO1dyPKk/edit#"
           class="d-block mb-3" style="background-image: url(qf.png);"></a>
-        <h2 class="text-center"><a
+        <h2 class="mb-4 text-center"><a
             href="https://docs.google.com/document/d/1DbVH7Le2AF4fObJ_1o62rND20_OBzegSFmCIO1dyPKk/edit#">
             QF Round</a></h2>
       </div>
@@ -116,13 +116,16 @@ background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);">
     <div class="row mt-5 justify-content-center">
       <div class="col-12 col-lg-8 text-white text-center">
         <p class="lead">
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:team@supermodular.xyz">team@supermodular.xyz</a>
-
-          <i class="fa-brands fa-twitter"></i>
-          <a href="https://twitter.com/supermodularxyz">@supermodularxyz</a>
-          &
-          <a href="https://twitter.com/owocki">@owocki</a>
+          <span class="d-block mb-3 d-lg-inline">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:team@supermodular.xyz">team@supermodular.xyz</a>
+          </span>
+          <span class="d-block mb-3 d-lg-inline">
+            <i class="fa-brands fa-twitter"></i>
+            <a href="https://twitter.com/supermodularxyz">@supermodularxyz</a>
+            &
+            <a href="https://twitter.com/owocki">@owocki</a>
+          </span>
         </p>
       </div>
 
