@@ -1,3 +1,8 @@
+body {
+  background: rgb(34, 34, 34);
+  background: linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
 #links a.d-block {
   position: relative;
   overflow: hidden;
