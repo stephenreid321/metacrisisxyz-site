@@ -12,80 +12,13 @@
   <!-- sass bootstrap-4.0.0/scss/bootstrap.scss:bootstrap.css -->
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="app.css">
 
   <!-- opengraph tags -->
   <meta property="og:title" content="metacrisis.xyz">
   <meta property="og:image" content="https://metacrisis.xyz/og.png">
   <meta property="og:url" content="https://metacrisis.xyz">
   <meta property="og:type" content="website">
-
-  <style>
-    .links a.d-block {
-      position: relative;
-      overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
-      height: 40vw;
-    }
-
-    .links a.d-block::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: inherit;
-      background-size: cover;
-      transform-origin: center;
-      transition: transform .4s ease-in-out;
-    }
-
-    .links a.d-block:focus::after,
-    .links a.d-block:hover::after {
-      transform: scale(1.05);
-    }
-
-    @media(min-width: 992px) {
-      .links a.d-block {
-        height: 20vw;
-      }
-    }
-
-    .rainbow {
-      background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      animation: rainbow_animation 10s ease-in-out infinite;
-      background-size: 400% 100%;
-    }
-
-    @media(min-width: 992px) {
-      .rainbow {
-        letter-spacing: 0.15em;
-      }
-    }
-
-    @keyframes rainbow_animation {
-
-      0%,
-      100% {
-        background-position: 0 0;
-      }
-
-      50% {
-        background-position: 100% 0;
-      }
-    }
-  </style>
-  <script>
-    // if hostname is not metacrisis.xyz, redirect 
-    if (window.location.hostname && window.location.hostname != 'metacrisis.xyz') {
-      window.location.replace('https://metacrisis.xyz');
-    }
-  </script>
 </head>
 
 <body class="p-5" style="background: rgb(34,34,34);
@@ -95,7 +28,7 @@ background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);">
 
     <h1 class="rainbow mb-5 text-center">metacrisis.xyz</h1>
 
-    <div class="row links">
+    <div id="links" class="row">
       <div class="col-12 col-lg-4">
         <a href="https://forum.metacrisis.xyz" class="d-block mb-3" style="background-image: url(forum.png);"></a>
         <h2 class="mb-4 text-center"><a href="https://forum.metacrisis.xyz">Forum</a></h2>
