@@ -16,10 +16,30 @@
   <title>metacrisis.xyz</title>
   <style>
     .links a.d-block {
+      position: relative;
+      overflow: hidden;
       background-size: cover;
       background-position: center;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
       height: 40vw;
+    }
+
+    .links a.d-block::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      background-size: cover;
+      transform-origin: center;
+      transition: transform .4s ease-in-out;
+    }
+
+    .links a.d-block:focus::after,
+    .links a.d-block:hover::after {
+      transform: scale(1.05);
     }
 
     @media(min-width: 992px) {
