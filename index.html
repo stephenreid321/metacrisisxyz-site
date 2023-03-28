@@ -16,8 +16,14 @@
   <style>
     .links a.d-block {
       background-size: cover;
-      height: 20vw;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+      height: 40vw;
+    }
+
+    @media(min-width: 992px) {
+      .links a.d-block {
+        height: 20vw;
+      }
     }
 
     .rainbow {
@@ -27,7 +33,12 @@
       color: transparent;
       animation: rainbow_animation 10s ease-in-out infinite;
       background-size: 400% 100%;
-      letter-spacing: 0.15em;
+    }
+
+    @media(min-width: 992px) {
+      .rainbow {
+        letter-spacing: 0.15em;
+      }
     }
 
     @keyframes rainbow_animation {
@@ -52,15 +63,15 @@ background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);">
     <h1 class="rainbow mb-5 text-center">metacrisis.xyz</h1>
 
     <div class="row links">
-      <div class="col">
+      <div class="col-12 col-lg-4">
         <a href="https://forum.metacrisis.xyz" class="d-block mb-3" style="background-image: url(forum.png);"></a>
         <h2 class="text-center"><a href="https://forum.metacrisis.xyz">Forum</a></h2>
       </div>
-      <div class="col">
+      <div class="col-12 col-lg-4">
         <a href="https://wiki.metacrisis.xyz" class="d-block mb-3" style="background-image: url(wiki.png);"></a>
         <h2 class="text-center"><a href="https://wiki.metacrisis.xyz">Wiki</a></h2>
       </div>
-      <div class="col">
+      <div class="col-12 col-lg-4">
         <a href="https://docs.google.com/document/d/1DbVH7Le2AF4fObJ_1o62rND20_OBzegSFmCIO1dyPKk/edit#"
           class="d-block mb-3" style="background-image: url(qf.png);"></a>
         <h2 class="text-center"><a
@@ -70,7 +81,7 @@ background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);">
     </div>
 
     <div class="row mt-5 justify-content-center">
-      <div class="col-8">
+      <div class="col-12 col-lg-8">
         <img class="w-100"
           src="https://publish-01.obsidian.md/access/8b1c03a7b33cc7a6066aa6262160e8fe/_assets/Pasted%20image%2020230215151402.png">
       </div>
